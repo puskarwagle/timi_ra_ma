@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>call me by ur name </title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main id="loginPage">
+        <h1 id="kaslevaneko">ko timi ?</h1>
+        <div class="chooseUser">
+            <label>
+                <input id='userguu' name="radio" value='userA' type='radio' />Puskar
+            </label>
+            <label>
+                <input id='userpus' name="radio" value='userB' type='radio' />Wagle
+            </label>
+        </div>
+    </main>
+
+    <main id="textsPage">
+        <header>
+            <button id="goBack">^ Back</button>
+            <p id="sendTo"></p>
+        </header>
+        <div class="messageBox" id="messageBox"></div>
+        <form id="messageForm">
+            <input id="messageInput" type="text" placeholder="Type ur message" name="name" value="">
+            <button id="submitBtn">Send</button>
+        </form>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

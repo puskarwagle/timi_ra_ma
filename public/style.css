@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    overflow: hidden;
+}
+main {
+    min-width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s;
+}
+main#loginPage {
+    justify-content: center;
+    align-items: center;
+}
+.chooseUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    gap:1rem;
+    margin-top: 1rem;
+}
+main#textsPage header {
+    display:flex;
+    padding:5px 10px;
+    gap:10px;
+}
+/* main#textsPage header #goBack {
+    
+} */
+.messageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 2px solid gray; */
+    background-color: #ebebeb;
+    color: #2f2f2f;
+    height:100%;
+}
+#messageForm {
+    margin: auto 0 0 0;
+    font-size: 1.1rem;
+    text-align: right;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#messageInput {
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+#messageInput:focus {
+    background-color: orange;
+    outline: none;
+}
+
+#submitBtn {
+    outline: none;
+    background-color: #6495ed;
+    color: white;
+    border: 0px solid transparent;
+    cursor: pointer;
+    display: inline;
+    padding: 0 2rem;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: medium;
+}
+#submitBtn:active {
+    border-color: #367bfa;
+}
+
